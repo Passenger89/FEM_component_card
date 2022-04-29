@@ -49,7 +49,8 @@ main {
 .card__main-info {
   align-items: center;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
 }
 
 .card__img {
@@ -85,13 +86,12 @@ main {
 .card__stats {
   list-style-type: none;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1.5rem;
   border-top: 0.5px solid #c9c9c9;
   margin-top: 1rem;
 }
 
 .stat {
-  border: 1px solid white;
   flex-basis: 100%;
   text-align: center;
   margin-block: auto;
