@@ -124,6 +124,16 @@ main {
   }
 }
 
+@media (max-height: 400px) {
+  main {
+    padding: 1rem;
+    overflow: scroll;
+  }
+  .attribution {
+    display: none;
+  }
+}
+
 /* UTILITIES */
 .row {
   display: flex;
