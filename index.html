@@ -10,35 +10,38 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <div class="card">
-      <figure class="card__avatar">
-        <img src="./images/image-victor.jpg" alt="avatar" />
-      </figure>
-      <div class="card__content">
-        <div class="content__name__age">
-          <h2 class="content__name" tabindex="0">Victor Crest</h2>
-          <!-- Use of h2 rather than h1 is intentional, as this will most likely be part of a larger layout-->
-          <span class="content__age" tabindex="0">26</span>
+    <main>
+      <div class="card column">
+        <div class="card__main-info column gap">
+          <img
+            class="card__img"
+            src="./images/image-victor.jpg"
+            alt="portrait of Victor Crest"
+          />
+          <div class="card__name-age row gap">
+            <h2 class="card__name">Victor Crest</h2>
+            <span class="card__age">26</span>
+          </div>
+          <p class="card__location row">London</p>
         </div>
-        <p class="content__location" tabindex="0">London</p>
+        <ul class="card__stats row gap">
+          <li class="stat">
+            <p>80K</p>
+            <p>Followers</p>
+          </li>
+          <li class="stat">
+            <p>1.4K</p>
+            <p>Photos</p>
+          </li>
+          <li class="stat">
+            <p>803K</p>
+            <p>Likes</p>
+          </li>
+        </ul>
       </div>
-      <div class="card__stats">
-        <div class="stat">
-          <span class="stat__digit" tabindex="0">80K</span>
-          <span class="stat__text" tabindex="0">Followers</span>
-        </div>
-        <div class="stat">
-          <span class="stat__digit" tabindex="0">803K</span>
-          <span class="stat__text" tabindex="0">Likes</span>
-        </div>
-        <div class="stat">
-          <span class="stat__digit" tabindex="0">1.4K</span>
-          <span class="stat__text" tabindex="0">Photos</span>
-        </div>
-      </div>
-    </div>
+    </main>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       <span>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -48,6 +51,6 @@
       <span
         >Coded by <a href="https://github.com/Passenger89/">William Nicholson</a>.</span
       >
-    </div>
+    </div> -->
   </body>
 </html>
