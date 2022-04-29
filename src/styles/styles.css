@@ -54,6 +54,8 @@ main {
 
 .card__img {
   max-width: 100%;
+  width: 100px;
+  height: auto;
   border-radius: 100px;
   outline: 5px solid #fff;
 }
