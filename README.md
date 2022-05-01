@@ -38,10 +38,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Flexbox
 - Mobile-first workflow
 
-### Continued development
-
-I'd like to improve the repsonsiveness of the layout as it can become distorted when the user zooms.
-
 ## Author
 
 - Website - [William Nicholson](https://williamnicholson@netlify.app)
