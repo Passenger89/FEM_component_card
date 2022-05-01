@@ -31,8 +31,10 @@ body {
 main {
   place-content: center;
   min-height: 100vh;
-  background: -30vw -65vh no-repeat url('../../images/bg-pattern-top.svg'),
-    50vw 40vh no-repeat url('../../images/bg-pattern-bottom.svg') var(--clr-primary-200);
+  background: calc(100vw - 75rem) calc(100vh - 80rem) no-repeat
+      url('../../images/bg-pattern-top.svg'),
+    calc(100vw - 15rem) calc(100vh - 28rem) no-repeat
+      url('../../images/bg-pattern-bottom.svg') var(--clr-primary-200);
 }
 
 .card {
