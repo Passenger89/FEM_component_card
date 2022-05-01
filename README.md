@@ -27,7 +27,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [Github repo](https://github.com/Passenger89/FEM_component_card.git)
-- Live Site URL: [Netlify - live](https://your-live-site-url.com)
+- Live Site URL: [Netlify - live](https://fem-component-card.netlify.app)
 
 ## My process
 
@@ -44,5 +44,5 @@ I'd like to improve the repsonsiveness of the layout as it can become distorted 
 
 ## Author
 
-- Website - [Add your name here](https://williamnicholson@netlify.app)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Passenger89)
+- Website - [William Nicholson](https://williamnicholson@netlify.app)
+- Frontend Mentor - [@Passenger89](https://www.frontendmentor.io/profile/Passenger89)
