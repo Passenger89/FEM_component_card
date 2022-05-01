@@ -31,8 +31,7 @@ body {
 main {
   display: flex;
   place-content: center;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: -30vw -65vh no-repeat url('../../images/bg-pattern-top.svg'),
     50vw 40vh no-repeat url('../../images/bg-pattern-bottom.svg') var(--clr-primary-200);
 }
@@ -94,16 +93,21 @@ main {
 
 .stat {
   flex-basis: 100%;
+  font-size: var(--fs-300);
   text-align: center;
+  color: var(--clr-neutral-400);
   margin-block: auto;
   letter-spacing: 0.2ch;
 }
-.stat p:nth-child(1) {
-  font-weight: var(--fw-700);
+
+.stat__digit {
+  display: block;
+  font-weight: 700;
+  color: #000;
 }
-.stat p:nth-child(2) {
-  font-size: var(--fs-300);
-  color: var(--clr-neutral-400);
+
+.stat__digit + textNode {
+  color: red;
 }
 
 .attribution {
@@ -116,22 +120,6 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-@media (min-width: 600px) {
-  .card {
-    max-width: 20rem;
-  }
-}
-
-@media (max-height: 400px) {
-  main {
-    padding: 1rem;
-    overflow: scroll;
-  }
-  .attribution {
-    display: none;
-  }
 }
 
 /* UTILITIES */
