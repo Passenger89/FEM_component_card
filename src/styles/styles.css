@@ -29,7 +29,6 @@ body {
 }
 
 main {
-  display: flex;
   place-content: center;
   min-height: 100vh;
   background: -30vw -65vh no-repeat url('../../images/bg-pattern-top.svg'),
@@ -57,7 +56,7 @@ main {
   width: 100px;
   height: auto;
   border-radius: 100px;
-  outline: 5px solid #fff;
+  border: 5px solid #fff;
 }
 
 .card__name-age {
@@ -111,15 +110,24 @@ main {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+@media (orientation: landscape) {
+  main {
+    flex-direction: row !important;
+  }
+  .card {
+    margin: 1rem;
+  }
+  .attribution {
+    width: 10%;
+    gap: 1rem;
+  }
 }
 
 /* UTILITIES */
