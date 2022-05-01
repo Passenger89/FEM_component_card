@@ -42,7 +42,8 @@ main {
   width: 100%;
   max-width: 20rem;
   border-radius: 1rem;
-  margin: auto;
+  margin-inline: auto;
+  margin-block: 1rem;
   overflow: hidden;
 }
 
@@ -117,19 +118,6 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-@media (orientation: landscape) {
-  main {
-    flex-direction: row !important;
-  }
-  .card {
-    margin: 1rem;
-  }
-  .attribution {
-    width: 10%;
-    gap: 1rem;
-  }
 }
 
 /* UTILITIES */
