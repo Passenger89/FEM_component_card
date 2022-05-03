@@ -24,48 +24,53 @@
 }
 
 body {
-  background-color: var(--clr-primary-200);
   font-family: var(--ff-primary);
-}
-
-main {
-  place-content: center;
-  min-height: 100vh;
   background: calc(100vw - 75rem) calc(100vh - 80rem) no-repeat
       url('../../images/bg-pattern-top.svg'),
     calc(100vw - 15rem) calc(100vh - 28rem) no-repeat
       url('../../images/bg-pattern-bottom.svg') var(--clr-primary-200);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .card {
-  background: top / 100% 40% no-repeat url('../../images/bg-pattern-card.svg') #fff;
   width: 100%;
   max-width: 20rem;
+  min-height: 23rem;
   border-radius: 1rem;
-  margin-inline: auto;
-  margin-block: 1rem;
+  background-color: #fff;
   overflow: hidden;
 }
 
-.card__main-info {
-  align-items: center;
+.card__header {
+  flex: 1 0 6rem;
+  background-image: url('../../images/bg-pattern-card.svg');
   justify-content: center;
-  padding-top: 6rem;
-  padding-bottom: 1rem;
+
+  position: relative;
 }
 
 .card__img {
   max-width: 100%;
-  width: 100px;
-  height: auto;
+  width: 6rem;
   border-radius: 100px;
   border: 5px solid #fff;
+  position: absolute;
+  top: 6rem;
+}
+
+.card__body {
+  flex: 1 0 5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__name-age {
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .card__name {
@@ -80,26 +85,27 @@ main {
 .card__location {
   font-size: var(--fs-300);
   color: var(--clr-neutral-400);
+}
 
-  justify-content: center;
-  align-items: center;
+.card__footer {
+  flex: 1 0 2rem;
 }
 
 .card__stats {
+  display: flex;
+  width: 100%;
   list-style-type: none;
-  justify-content: space-around;
-  padding: 1.5rem;
   border-top: 0.5px solid #c9c9c9;
-  margin-top: 1rem;
+  padding-inline: 1rem;
 }
 
 .stat {
   flex-basis: 100%;
-  font-size: var(--fs-300);
+
+  justify-content: center;
   text-align: center;
+  font-size: var(--fs-300);
   color: var(--clr-neutral-400);
-  margin-block: auto;
-  letter-spacing: 0.2ch;
 }
 
 .stat__digit {

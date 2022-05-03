@@ -11,47 +11,49 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <main class="column">
-      <div class="card column">
-        <div class="card__main-info column gap">
-          <img
-            class="card__img"
-            src="./images/image-victor.jpg"
-            alt="portrait of Victor Crest"
-          />
-          <div class="card__name-age row gap">
-            <h2 class="card__name">Victor Crest</h2>
-            <span class="card__age">26</span>
-          </div>
-          <p class="card__location row">London</p>
+    <div class="card column">
+      <header class="card__header row">
+        <img
+          class="card__img"
+          src="./images/image-victor.jpg"
+          alt="portrait of Victor Crest"
+        />
+      </header>
+      <main class="card__body column gap">
+        <div class="card__name-age row gap">
+          <h2 class="card__name">Victor Crest</h2>
+          <span class="card__age">26</span>
         </div>
+        <p class="card__location row">London</p>
+      </main>
+      <footer class="card__footer row">
         <ul class="card__stats row gap">
-          <li class="stat">
+          <li class="stat column">
             <span class="stat__digit">80K</span>
             Followers
           </li>
-          <li class="stat">
+          <li class="stat column">
             <span class="stat__digit">803K</span>
             Likes
           </li>
-          <li class="stat">
+          <li class="stat column">
             <span class="stat__digit">1.4K</span>
             Photos
           </li>
         </ul>
-      </div>
+      </footer>
+    </div>
 
-      <div class="attribution">
-        <span>
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >.
-        </span>
-        <span
-          >Coded by <a href="https://github.com/Passenger89/">William Nicholson</a>.</span
-        >
-      </div>
-    </main>
+    <div class="attribution">
+      <span>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.
+      </span>
+      <span
+        >Coded by <a href="https://github.com/Passenger89/">William Nicholson</a>.</span
+      >
+    </div>
   </body>
 </html>
